@@ -1,0 +1,708 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Welcome to Mishra Restaurant. Enjoy delicious food, great taste and wonderful dining experience.">
+
+    <title>Mishra Restaurant | Taste & Tradition</title>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <!-- Restaurant Logo -->
+            <a href="#home" class="logo">
+                Mishra<span>Restaurant.</span>
+            </a>
+
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+
+                <a href="#home">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="#menu">Our Menu</a>
+
+                <a href="#gallery">Gallery</a>
+
+                <a href="#contact">Contact</a>
+
+                <li>
+                 <a href="#cart">🛒 Cart (<span id="cart-count">0</span>)</a>
+                </li>
+
+            </nav>
+
+
+            <!-- Order Button -->
+            <a href="#contact" class="nav-btn">
+                Book a Table
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-subtitle">
+                WELCOME TO MISHRA RESTAURANT
+            </p>
+
+
+            <h1>
+                Good Food.
+                <br>
+                Great Memories.
+            </h1>
+
+
+            <p class="hero-description">
+                Experience delicious flavours, fresh ingredients
+                and unforgettable moments with every meal.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="primary-btn">
+                    Explore Menu
+                </a>
+
+                <a href="#about" class="secondary-btn">
+                    Discover More
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about section-padding" id="about">
+
+        <div class="container about-container">
+
+
+            <!-- About Image -->
+            <div class="about-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900"
+                    alt="Restaurant interior"
+                >
+
+            </div>
+
+
+            <!-- About Content -->
+            <div class="about-content">
+
+                <p class="section-subtitle">
+                    ABOUT OUR RESTAURANT
+                </p>
+
+
+                <h2>
+                    Bringing People Together Through Great Food
+                </h2>
+
+
+                <p>
+                    At Mishra Restaurant, we believe that great food
+                    creates beautiful memories.
+
+                    Our goal is to serve delicious meals made with
+                    quality ingredients and care.
+                </p>
+
+
+                <a href="#contact" class="primary-btn">
+                    Visit Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!-- =====================================
+     RESTAURANT MENU SECTION
+===================================== -->
+
+<section class="menu section-padding" id="menu">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-subtitle">OUR FOOD COLLECTION</p>
+
+            <h2>Explore Our Menu</h2>
+
+            <p>Fresh ingredients, delicious food and unforgettable taste.</p>
+
+        </div>
+
+
+        <!-- =====================================
+             VEG MENU
+        ====================================== -->
+
+        <div class="food-category">
+
+            <div class="category-heading">
+                <span>🥗</span>
+                <h2>Vegetarian Menu</h2>
+                <p>Delicious food made with fresh vegetables.</p>
+            </div>
+
+            <div class="menu-grid">
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600" alt="Paneer Butter Masala">
+                    <div class="menu-card-content">
+                        <h3>Paneer Butter Masala</h3>
+                        <p>Paneer in rich creamy tomato gravy.</p>
+                        <span>₹189</span>
+                         <h4></h4>
+                          
+
+                             <button class="add-to-cart-btn"
+                            data-name="Paneer Butter Masala"
+                          data-price="189">
+                           Add to Cart 🛒
+                        </button>
+                        
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600" alt="Veg Thali">
+                    <div class="menu-card-content">
+                        <h3>Special Veg Thali</h3>
+                        <p>Rice, dal, curry, roti and salad.</p>
+                        <span>₹199</span>
+
+                         <button class="add-to-cart-btn"
+                            data-name="Special Veg Thali"
+                          data-price="199">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600" alt="Dal Makhani">
+                    <div class="menu-card-content">
+                        <h3>Dal Makhani</h3>
+                        <p>Traditional slow-cooked creamy dal.</p>
+                        <span>₹159</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Dal Makhani"
+                          data-price="159">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src=".//imgfile/vegbiriyani.jpg" alt="Veg Biryani">
+                    <div class="menu-card-content">
+                        <h3>Veg Biryani</h3>
+                        <p>Flavourful basmati rice with spices.</p>
+                        <span>₹169</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Veg Biryani"
+                          data-price="169">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600" alt="Masala Dosa">
+                    <div class="menu-card-content">
+                        <h3>Masala Dosa</h3>
+                        <p>Crispy dosa with potato masala.</p>
+                        <span>₹99</span>
+                            <button class="add-to-cart-btn"
+                                data-name="Masala Dosa"
+                            data-price="99">
+                            Add to Cart 🛒
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600" alt="Veg Fried Rice">
+                    <div class="menu-card-content">
+                        <h3>Veg Fried Rice</h3>
+                        <p>Fried rice with fresh vegetables.</p>
+                        <span>₹149</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Fried rice with fresh vegetables"
+                          data-price="149">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             NON VEG MENU
+        ====================================== -->
+
+        <div class="food-category">
+
+            <div class="category-heading">
+                <span>🍗</span>
+                <h2>Non-Vegetarian Menu</h2>
+                <p>Enjoy our delicious chicken, mutton and fish dishes.</p>
+            </div>
+
+            <div class="menu-grid">
+
+                <div class="menu-card">
+                    <img src="./imgfile/chickenbiriyani.jpg" alt="Chicken Biryani">
+                    <div class="menu-card-content">
+                        <h3>Chicken Biryani</h3>
+                        <p>Aromatic basmati rice with chicken.</p>
+                        <span>₹229</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Chicken Biryani"
+                          data-price="229">
+                           Add to Cart 🛒
+                        </button>
+                        
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="./imgfile/chickencurry.jpg" alt="Chicken Curry">
+                    <div class="menu-card-content">
+                        <h3>Chicken Curry</h3>
+                        <p>Traditional chicken curry with spices.</p>
+                        <span>₹219</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Chicken Curry"
+                          data-price="219">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600" alt="Butter Chicken">
+                    <div class="menu-card-content">
+                        <h3>Butter Chicken</h3>
+                        <p>Chicken cooked in creamy gravy.</p>
+                        <span>₹249</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Butter Chicken"
+                          data-price="249">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="./imgfile/muttonbiriyani.jpg" alt="Mutton Biryani">
+                    <div class="menu-card-content">
+                        <h3>Mutton Biryani</h3>
+                        <p>Rich mutton biryani with aromatic spices.</p>
+                        <span>₹299</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Mutton Biryani"
+                          data-price="299">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="./imgfile/fishcurry.jpg" alt="Fish Curry">
+                    <div class="menu-card-content">
+                        <h3>Fish Curry</h3>
+                        <p>Traditional fish curry with Indian spices.</p>
+                        <span>₹249</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Fish Curry"
+                          data-price="249">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="./imgfile/egg curry.jpg" alt="Egg Curry">
+                    <div class="menu-card-content">
+                        <h3>Egg Curry</h3>
+                        <p>Boiled eggs in spicy masala gravy.</p>
+                        <span>₹139</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Egg Curry"
+                          data-price="139">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             JUICE & BEVERAGES MENU
+        ====================================== -->
+
+        <div class="food-category">
+
+            <div class="category-heading">
+                <span>🥤</span>
+                <h2>Fresh Juice & Beverages</h2>
+                <p>Fresh, chilled and refreshing drinks.</p>
+            </div>
+
+            <div class="menu-grid">
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=600" alt="Orange Juice">
+                    <div class="menu-card-content">
+                        <h3>Fresh Orange Juice</h3>
+                        <p>Freshly squeezed orange juice.</p>
+                        <span>₹79</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Fresh Orange Juice"
+                          data-price="79">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=600" alt="Mango Juice">
+                    <div class="menu-card-content">
+                        <h3>Mango Juice</h3>
+                        <p>Sweet and refreshing mango juice.</p>
+                        <span>₹89</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Mango Juice"
+                          data-price="89">
+                           Add to Cart 🛒
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src=".//imgfile/limejuice.jpg" alt="Fresh Lime Juice">
+                        <h3>Fresh Lime Juice</h3>
+                        <p>Refreshing sweet or salted lime juice.</p>
+                        <span>₹49</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Fresh Lime Juice"
+                          data-price="49">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600" alt="Milkshake">
+                    <div class="menu-card-content">
+                        <h3>Chocolate Milkshake</h3>
+                        <p>Thick chocolate shake with milk.</p>
+                        <span>₹109</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Chocolate Milkshake"
+                          data-price="109">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600" alt="Cold Coffee">
+                    <div class="menu-card-content">
+                        <h3>Cold Coffee</h3>
+                        <p>Chilled creamy coffee.</p>
+                        <span>₹99</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Cold Coffee"
+                          data-price="99">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=600" alt="Sweet Lassi">
+                    <div class="menu-card-content">
+                        <h3>Sweet Lassi</h3>
+                        <p>Traditional refreshing yogurt drink.</p>
+                        <span>₹69</span>
+                         <button class="add-to-cart-btn"
+                            data-name="Sweet Lassi"
+                          data-price="69">
+                           Add to Cart 🛒
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+ 
+ 
+        
+<!-- Shopping Cart Section -->
+<section class="cart-section" id="cart">
+
+    <h2>Your Shopping Cart</h2>
+
+    <div class="cart-container">
+
+        <div id="cart-items">
+            <p class="empty-cart">Your cart is empty!</p>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+
+            <p>
+                Total Items:
+                <span id="total-items">0</span>
+            </p>
+
+            <h3>
+                Total Amount:
+                ₹<span id="cart-total">0</span>
+            </h3>
+
+            <button id="checkout-btn" class="btn">
+                Checkout on WhatsApp
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+             
+                   
+
+
+
+
+    <!-- ================= GALLERY SECTION ================= -->
+
+    <section class="gallery section-padding" id="gallery">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="section-subtitle">
+                    OUR FOOD GALLERY
+                </p>
+
+                <h2>
+                    A Taste Worth Sharing
+                </h2>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?w=700"
+                    alt="Delicious food"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=700"
+                    alt="Fresh food"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=700"
+                    alt="Healthy meal"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact section-padding" id="contact">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="section-subtitle">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Visit Mishra Restaurant
+                </h2>
+
+                <p>
+                    We would love to serve you!
+                </p>
+
+            </div>
+
+
+            <div class="contact-info">
+
+                <div class="contact-card">
+
+                    <h3>
+                        Address
+                    </h3>
+
+                    <p>
+                        Lane2, Gandhinagar, Berhampur, Odisha, India - 760001
+                    </p>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <h3>
+                        Phone
+                    </h3>
+
+                    <p>
+                        +91 9876543210
+                    </p>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <h3>
+                        Opening Hours
+                    </h3>
+
+                    <p>
+                        Monday - Sunday
+                        <br>
+                        10:00 AM - 11:00 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Button -->
+            <div class="contact-button">
+
+                <a
+                    href="https://wa.me/+919876543210"
+                    target="_blank"
+                    class="primary-btn"
+                >
+                    Order on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <a href="#home" class="footer-logo">
+                Mishra Restaurant.
+            </a>
+
+
+            <p>
+                Good Food. Great Memories.
+            </p>
+
+
+            <p class="copyright">
+                © 2026 Mishra Restaurant. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

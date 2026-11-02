@@ -1,0 +1,599 @@
+
+/* =========================================
+   1. GOOGLE FONTS & ROOT VARIABLES
+========================================= */
+
+:root {
+    --primary-color: #651c32;
+    --secondary-color: #f7f1e8;
+    --gold-color: #c49a45;
+    --dark-color: #211a19;
+    --text-color: #66615d;
+    --white-color: #ffffff;
+}
+
+
+/* =========================================
+   2. GLOBAL RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+
+/* =========================================
+   3. HEADER & NAVBAR
+========================================= */
+
+.header {
+    width: 100%;
+    background-color: var(--white-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+}
+
+.navbar {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.logo span {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold-color);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--gold-color);
+}
+
+.nav-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 12px 22px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: var(--gold-color);
+}
+
+
+/* =========================================
+   4. HERO SECTION
+========================================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(25, 12, 12, 0.85),
+            rgba(25, 12, 12, 0.25)
+        ),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1800")
+        center/cover no-repeat;
+    color: var(--white-color);
+    padding: 100px 8%;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-subtitle {
+    color: var(--gold-color);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 82px);
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    max-width: 550px;
+    font-size: 16px;
+    color: #eee2dc;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   5. BUTTON STYLES
+========================================= */
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: var(--gold-color);
+    color: var(--white-color);
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+
+/* =========================================
+   6. SECTION HEADINGS
+========================================= */
+
+.section-subtitle {
+    color: var(--gold-color);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    font-size: clamp(30px, 4vw, 43px);
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: var(--text-color);
+}
+
+
+/* =========================================
+   7. ABOUT SECTION
+========================================= */
+
+.about {
+    background-color: var(--white-color);
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.about-image img {
+    height: 450px;
+    border-radius: 8px;
+}
+
+.about-content h2 {
+    font-size: 42px;
+    line-height: 1.3;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.about-content > p:not(.section-subtitle) {
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   8. MENU SECTION
+========================================= */
+
+.menu {
+    background-color: var(--secondary-color);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.menu-card {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.menu-card img {
+    height: 240px;
+}
+
+.menu-card-content {
+    padding: 25px;
+}
+
+.menu-card-content h3 {
+    font-size: 23px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.menu-card-content p {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.menu-card-content span {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold-color);
+}
+
+
+/* =========================================
+   9. GALLERY SECTION
+========================================= */
+
+.gallery {
+    background-color: var(--white-color);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    height: 280px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================================
+   10. CONTACT SECTION
+========================================= */
+
+.contact {
+    background-color: var(--secondary-color);
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    background-color: var(--white-color);
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    border-bottom: 3px solid var(--gold-color);
+}
+
+.contact-card h3 {
+    font-size: 22px;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.contact-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/* =========================================
+   11. FOOTER
+========================================= */
+
+.footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 55px 0 25px;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gold-color);
+}
+
+.footer p {
+    margin-top: 12px;
+    color: #c9c1bb;
+    font-size: 14px;
+}
+
+.footer .copyright {
+    border-top: 1px solid #514747;
+    padding-top: 20px;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   12. TABLET RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .about-container {
+        gap: 30px;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   13. MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 600px) {
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 18px 0;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+    .nav-btn {
+        padding: 10px 18px;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 70px 6%;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 47px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        gap: 12px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        padding: 12px 18px;
+        font-size: 12px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-card img {
+        height: 230px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid img {
+        height: 250px;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+}
+
+
+
+
+
+
+/* Menu Image Fix */
+ 
+.menu-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-card-content {
+    padding: 20px;
+}
+
+.menu-card-content h3 {
+    margin-bottom: 10px;
+}
+
+.menu-card-content p {
+    margin-bottom: 12px;
+}
+
+
+
+
+
+.order-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #128C7E;
+}
